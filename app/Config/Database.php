@@ -27,10 +27,10 @@ class Database extends Config
     public array $default = [
         'DSN'          => '',
         'hostname'     => 'localhost',
-        'username'     => 'postgres',
+        'username'     => 'root',
         'password'     => '123Jesus',
         'database'     => 'producto',
-        'DBDriver'     => 'postgres',
+        'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,
         'DBDebug'      => true,

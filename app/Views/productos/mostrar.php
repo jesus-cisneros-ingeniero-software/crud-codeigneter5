@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="<?= base_url('/css/estilo.css') ?>">
+
 <!-- Recibe el mensaje de producto guardado-->
 <?php if (session('mensaje')) { ?>
 
@@ -8,8 +10,8 @@
 
 
 <?php } ?>
-<div class="container" >
-    
+<div class="container">
+
     <h1>Tabla Productos</h1>
 
     <table class="table table-success table-striped">
@@ -31,8 +33,8 @@
                     <td><?php echo $campo['precio']; ?></td>
                     <td>
                         <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                            <a type="button" class="btn btn-outline-success" href="<?php echo base_url('/producto/editar/' . $campo['id']); ?>">Editar</a> 
-                            <a img src="/app/Imagenes/eliminar.jpg" widh="50px" height="50px"  type="button" class="btn btn-outline-danger" href="<?php echo base_url('/producto/borrar/' . $campo['id']); ?>">Eliminar</a>
+                            <a type="button" class="btn btn-outline-success" href="<?php echo base_url('/producto/editar/' . $campo['id']); ?>">Editar</a>
+                            <a img src="/app/Imagenes/eliminar.jpg" widh="50px" height="50px" type="button" class="btn btn-outline-danger" href="<?php echo base_url('/producto/borrar/' . $campo['id']); ?>">Eliminar</a>
                         </div>
                     </td>
                 </tr>
